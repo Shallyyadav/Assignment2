@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<title>Portfolio</title>
+		<style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                box-sizing: border-box;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                background: seagreen;
+                color: #fff;
+            }
+            #header{
+                width: 100%;
+                height: 100vh;
+            }
+            
+            .container{
+                padding: 10px 10%;
+            }
+            nav{
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            nav h1{
+                padding-top: 5px;
+                font-size: 50px;
+                color: #d7213a;
+            }
+            nav ul li{
+                display: inline-block;
+                list-style: none;
+                margin: 10px 20px;
+                padding-top: 70px;
+            }
+            nav ul li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 24px;
+                position: relative;
+            }
+            nav ul li a::after{
+                content: '';
+                width: 0;
+                height: 3px;
+                background: #ff004f;
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                transition: 0.5s;
+            }
+            nav ul li a:hover::after{
+                width: 100%;
+            }
+            .header-text{
+                margin-top: 20%;
+                font-size: 30px;
+            }
+            .header-text p{
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 10px;
+                color: darkmagenta;
+            }
+            .header-text h3{
+                font-size: 35px;
+                margin-top: 40px;
+                margin-left: 110px;
+                color:#d7213a;
+            }
+            #about{
+                padding: 80px 0;
+            }
+            .row{
+                display:flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .about-col-1{
+                flex-basis: 35%;
+            }
+            .about-col-1 img{
+                width:90%;
+                border-radius: 15px;
+            }
+            .about-col-2{
+                flex-basis: 60%;
+            }
+            .sub-title{
+                font-size: 60px;
+                font-weight: 600;
+                color: #fff;
+            }
+            .tab-titles{
+                display: flex;
+                margin: 20px 0 40px;
+            }
+            .tab-links{
+                margin-right: 50px;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+                position: relative;
+            }
+            .tab-links::after{
+                content: '';
+                width: 0;
+                height: 3px;
+                background: #ff004f;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                transition: 0.5s;
+            }
+            .tab-links.active-link::after{
+                width: 50%;
+            }
+            .tab-contents ul li{
+                list-style-type: none;
+                margin: 10px 0;
+            }
+            .tab-contents ul li span{
+                color: #ff004f;
+                font-size: 19px;
+            }
+            .tab-contents{
+                display: none;
+            }
+            .tab-contents.active-tab{
+                display: block;
+            }
+          
+.table {
+  margin: 0 auto; 
+  padding-left: 240px;
+  border-collapse: collapse; 
+}
+
+
+table, th, td {
+  border: none; 
+  padding: 6px; 
+  text-align: center; 
+}
+
+
+a {
+  text-decoration: none; 
+  color: #000; 
+}
+
+
+a:hover {
+  color: red;
+}
+
+            .container table{
+                align-items: center;
+            }
+           .contact-left{
+            flex-basis: 35%;
+           }
+           .contact-right{
+            flex-basis: 60%;
+           }
+           .contact-left a{
+            margin-left: 30px;
+            color:darkorange;
+           }
+           .contact-left p{
+                margin-top: 25px;
+                margin-left: 30px;
+                color:brown;
+           }
+           .contact-left h1{
+             margin-left: 30px;
+           }
+           .contact-left p i{
+            color: #ff004f;
+            margin-right: 35px;
+            font-size: 25px;
+           }
+           .social-icons{
+            margin-top: 30px;
+           }
+           .social-icons a{
+            margin-left: 30px;
+           }
+           .button {
+                border: none;
+                color: white;
+                padding: 10px 26px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                }
+
+        .button1 {background-color: brown;}
+        .contact-right form{
+            width: 100%;
+        }
+        form input, form textarea{
+            width: 80%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+			
+		</style>
+	</head>
+
+	<body>
+				<div id="header">
+                    <div class="container">
+                        <nav>
+                            <h1>Portfolio</h1>
+                        <ul>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        </nav>
+                        <div class="header-text">
+                            <p style="font-size: 70px; color: blue;">Welcome!</p>
+                            <p>Hello there, and thank you for visiting my portfolio website.
+                                 Here, you'll find a curated collection of my <br><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                     &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                     work, showcasing my passion, creativity, and dedication to 
+                                 excellence in coding. 
+                            </p>
+                            <h3>Here is my Portfolio</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="pic1.jpg" style=" width: 250;">
+                            </div>
+                            <div class="about-col-2">
+                                <h1 class="sub-title">About Me</h1><br>
+                                <p>Thanks for visiting my profile.
+                                    Hi, I am Shally an enthusiastic learner. 
+                                    
+                                    Currently, a pre-final year student pursuing my bachelor's in Information technology at Banasthali Vidyapith.
+                                    Ecstatic towards learning new technical skills.
+                                    Happy coding 🤗</p>
+
+                                <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('interest')">Interest</p>
+                                    </div>
+                                    <div class="tab-contents active-tab" id="skills">
+                                        <ul>
+                                            <li><span>C</span></li>
+                                            <li><span>C++</span></li>
+                                            <li><span>Software Engineering</span></li>
+                                            <li><span>DBMS</span></li>
+                                            <li><span>Microsoft Word</span></li>
+                                            <li><span>HTML</span></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="tab-contents" id="experience">
+                                        <ul>
+                                            <li><span>2022-Present</span><br>Contributor - 
+                                            Girlscript Summer of code</li>
+                                            <li><span>2021-Present</span><br>Member - 
+                                            DSC Banasthali Vidyapith</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-contents" id="education">
+                                        <ul>
+                                            <li><span>2025</span><br>
+                                            Bachelor of technology | Information Technology
+                                        <br>CGPA - 8.33/10.00<br>Banasthali Vidyapith</li>
+                                            <li><span>2021</span><br>Senior School | 
+                                            PCM(Physics,Chemistry,Maths)
+                                        <br>Jawahar Navodaya Vidyalaya,Mungeshpur,Delhi</li>
+                                            <li><span>2019</span><br>Secondary School
+                                            <br>Jawahar Navodaya Vidyalaya,Mungeshpur,Delhi</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="tab-contents" id="interest">
+                                        <ul>
+                                            <li><span>Dancing</span></li>
+                                            <li><span>Travelling</span></li>
+                                            <li><span>Reading</span></li>
+                                            <li><span>Listening to Music</span></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio">
+                    <div class="container">
+                        <div class="table">
+                        <h1 class="sub-title">My Work</h1><br>
+                    <table>
+                        <tr><td><a href="lab1.html">Lab1</a>
+
+                        </td><td></td>
+                            <td><a href="lab2.html">Lab2</a></td>
+                        </tr>
+                           <tr><td><a href="lab3.html">Lab3</a></td><td></td>
+                            <td><a href="lab4.html">Lab4</a></td>
+                        </tr>
+                            <tr><td><a href="lab5.html">Lab5</a></td><td></td>
+                            <td><a href="lab6.html">Lab6</a></td></tr>
+                            <tr><td><a href="lab7.html">Lab7</a></td><td></td>
+                            <td><a href="lab8.html">Lab8</a></td></tr>
+                            <tr><td><a href="lab9.html">Lab9</a></td><td></td>
+                            <td><a href="lab10.html">Lab10</a></td></tr>
+                            <tr><td><a href="lab11.html">Lab11</a></td><td></td>
+                            <td><a href="lab12.html">Lab12</a></td></tr>
+                            <tr>
+                                <td><a href="lab13.html">Lab13</a></td><td></td>
+                                <td><a href="lab14.html">Lab14</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lab15.html">Lab15</a></td><td></td>
+                                <td><a href="lab16.html">Lab16</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lab17.html">Lab17</a></td><td></td>
+                                <td><a href="lab18.html">Lab18</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lab19.html">Lab19</a></td>
+                            <td></td></td></td>
+                                <td><a href="lab20.html">Lab20</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lab21.html">Lab21</a></td><td></td>
+                                <td><a href="lab22.html">Lab22</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lab23.html">Lab23</a></td>
+                                <td><a href="lab24.html">Lab24</a></td>
+                                <td><a href="assign1.html">Assignment1</a></td>
+                            </tr>
+                      </table>
+                      </div>
+                      </div>
+                      </div>
+
+               
+
+                <!--Contact Section-->
+                <div id="contact">
+                    <div id="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1><br>
+                                <a href="mailto:shallyyadav261@gmail.com">shallyyadav261@gmail.com</a>
+                                 <p>012346789</p>
+                                 <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/shally-yadav-a052131b8/"><img src="linkedin.png" 
+                                        height="30" width="30" alt="linkedin"/></a>
+                                    <a href="https://github.com/Shallyyadav"><img src="github.png" height="30" 
+                                        width="30" alt="github"/></a>
+
+                                 </div>
+                            </div>
+                            <div class="contact-right">
+                                <form name="Message" method="post" action="mailto:shallyyadav261@gmail.com" onsubmit="return check()">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="email" placeholder="Your email" required>
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                                    <button type="submit" class="button button1">Submit</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+               
+				
+				<script>
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+
+                    function opentab(tabname){
+                        for(tablink of tablinks){
+                            tablink.classList.remove("active-link");
+                        }
+                        for(tabcontent of tabcontents){
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                    function check(){
+                        emailid=document.forms[0].elements[0].value;
+                        RegExpEmail=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+
+                        if(RegExpEmail.test(emailId)==false){
+                            alert("Enter Valid Email")
+                        }
+                        else{
+                            return true;
+                        }
+                    }
+                </script>
+					  
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab21</title>
+    </head>
+    <body>
+        <h1>Timer</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <p id="timer">0 seconds</p>
+        <script>
+            var time_internal;
+            var seconds = 0;
+            function startTimer(){
+                clear_interval=  setInterval(function()
+                {
+                    seconds++;
+                    document.getElementById("timer").inner;
+                    Text = seconds+"seconds";
+                },(1000));
+            }
+            function stopTimer(){
+                clear_Internal(time_internal);
+            }
+            document.getElementById("start").addEventListener("click",start_timer);
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab20</title>
+    </head>
+    <body>
+        <div id="clock"></div>
+        <script>
+            clock=document.getElementById("clock")
+            function digiclock(){
+                var dt = new Date();
+                hh = dt.getHours();
+                mm = dt.getMinutes();
+                ss = dt.getSeconds();
+                time = hh+":"+mm+":"+ss;
+                clock.innerHTML = time;
+            }
+            setInternal(digiclock,500);
+        </script>
+    </body>
+</html>
